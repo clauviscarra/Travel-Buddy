@@ -1,0 +1,411 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,900);
+@import url(https://fonts.googleapis.com/css?family=Grand+Hotel|Open+Sans);
+a {
+  color: #2a9d8f;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: auto;
+  font-size: 13px;
+}
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+table {
+  text-align: center;
+  margin: auto;
+  color: #3f3e3f;
+}
+
+table tr {
+  text-align: center;
+  margin: auto;
+  color: #3f3e3f;
+  font-size: 14px;
+  padding-bottom: : 10px;
+}
+
+.teams-page {
+  width: 900px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.teams-background {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 900px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.teams-background  input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 30%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.teams-background .description {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 91%;
+  height:100px;
+  border: 0;
+  margin: 0 0 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.teams-background  select {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 30%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  height:50px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 0px;
+}
+
+.teams-background .message {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 15px;
+}
+
+.teams-background .button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #f7a67b;
+  width: 20%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form select {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  height:45px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 0px;
+}
+
+.form .button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #f7a67b;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form .button:hover, .form .button:active, .form .button:focus {
+  background: #f7925b;
+}
+
+.button:hover, .button:active, .button:focus {
+  background: #f7925b;
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+
+.form .message a {
+  color: #2179c6;
+  text-decoration: none;
+}
+
+.form .register-form {
+  display: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container .info {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.container .info span .fa {
+  color: #EF3B3A;
+}
+
+.main-logo {
+  font-family: "Grand Hotel", cursive;
+  font-size: 66px;
+  color: #e76f51;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  -webkit-animation: colorchange 20s infinite alternate;
+}
+
+.small-logo {
+  font-family: "Grand Hotel", cursive;
+  font-size: 56px;
+  color: #e76f51;
+  margin-bottom: -10px;
+  margin-top: 20px;
+  -webkit-animation: colorchange 20s infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    color: #e76f51;
+  }
+  20% {
+    color: #e9c46a;
+  }
+  30% {
+    color: #e76f51;
+  }
+  40% {
+    color: #e9c46a;
+  }
+  50% {
+    color: #e76f51;
+  }
+  60% {
+    color: #e9c46a;
+  }
+  70% {
+    color: #e76f51;
+  }
+  80% {
+    color: #e9c46a;
+  }
+  100% {
+    color: #e76f51;
+  }
+}
+
+.subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #3f3e3f;
+  margin-top: -5px;
+}
+
+.textbody {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  color: #3f3e3f;
+  width: 450px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.home-background {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto 40px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.home-container {
+  margin: auto;
+  margin-top: 80px;
+}
+
+.about {
+  text-align: center;
+  color: white;
+  font-weight: 900;
+}
+
+.background_01 {
+  background-image: url("../images/background_01.png");
+  background-color: #84f9de;
+  /* fallback for old browsers */
+  /*background: -webkit-linear-gradient(right, #76b852, #41bfa1);
+ background: -moz-linear-gradient(right, #84f9de, #41bfa1);
+ background: -o-linear-gradient(right, #84f9de, #41bfa1);
+ background: linear-gradient(to left, #84f9de, #41bfa1);*/
+  font-family: "Roboto", sans-serif;
+}
+
+.background_02 {
+  background-image: url("../images/background_02.png");
+  background-color: #84f9de;
+  font-family: "Roboto", sans-serif;
+}
+
+.background_03 {
+  background-image: url("../images/background_03.png");
+  background-color: #84f9de;
+  font-family: "Roboto", sans-serif;
+}
+
+.background_04 {
+  background-image: url("../images/background_04.png");
+  background-color: #84f9de;
+  font-family: "Roboto", sans-serif;
+}
+
+.background_05 {
+  background-image: url("../images/background_05.png");
+  background-color: #84f9de;
+  font-family: "Roboto", sans-serif;
+}
+
+.background_06 {
+  background-image: url("../images/background_06.png");
+  background-color: #84f9de;
+  font-family: "Roboto", sans-serif;
+}
+
+h2{
+  font-family: "Roboto", sans-serif;
+  color: #264653;
+  font-weight:900;
+  font-size: 18px;
+}
+
+td{
+  width:200px;
+}
+
+th{
+  color: #e76f51;
+}
+
+img{
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  border: 6px solid  #e76f51;
+}
+
+.country-background {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 280px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.country{
+  font-family: "Grand Hotel", cursive;
+  color: #e76f51;
+  font-size: 50px;
+  margin: auto;
+  margin-top: 2px;
+  margin-bottom: -10px;
+
+}
+
+.date{
+  font-family: "Roboto", sans-serif;
+  color: #264653;
+  font-weight:300;
+  font-size: 15px;
+
+}
+
+#togglebuddies{
+  display: none;
+}

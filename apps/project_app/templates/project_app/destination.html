@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Team Information</title>
+  {% load staticfiles %}
+  <link rel="stylesheet" href="{% static 'login_app/css/style.css' %}" media="screen" title="no title" charset="utf-8">
+  <script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js'></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+      $("#buddies").click(function() {
+        $("#togglebuddies").slideDown();
+        $("#buddies").slideUp("slow");
+
+      });
+
+    });
+  </script>
+
+</head>
+
+<body class="background_04">
+  <div class="teams-page">
+    <div class="country-background">
+      {%for i in other_users%}
+      <img src="{%static 'login_app/images/'%}{{i.destination}}.jpeg" alt="">
+      <h1 class='country'> {{i.destination}}</h1>
+      <p class='date'>{{i.date_from}} - {{i.date_to}}</p>
+      <p>"{{i.description}}"</p>
+      <p class='date'>-{{i.created_by}} (trip organizer)</p>
+
+
+
+      {%endfor%}
+      <p id="buddies"> <span style="color:#2a9d8f; font-size:13px">Click to see buddies!</span></p>
+
+      <div id="togglebuddies">
+        <p><span style="color:#e76f51; font-size:13px"> Friends on this trip:</span></p>
+        {%for i in users_filter%}
+
+        <p><span style="color:#264653; font-size:13px">{{i.user.first_name}}</span></p>
+        {%endfor%}
+      </div>
+
+
+      <hr>
+
+      <a href="/travels">Home</a> | <a href="/logout">Log Out</a>
+    </div>
+  </div>
+
+</body>
+
+</html>

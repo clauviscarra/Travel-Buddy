@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Team Information</title>
+  {% load staticfiles %}
+  <link rel="stylesheet" href="{% static 'login_app/css/style.css' %}" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body class="background_05">
+  <div class="teams-page">
+    <div class="teams-background">
+      <div class="small-logo">
+        Travel Buddy
+      </div>
+      <p class="subtitle"> Welcome, {{request.session.user_name}}!</p>
+
+
+      <h2 class='info'> YOUR TRIPS</h2>
+
+
+      <table>
+        <tr>
+          <th>Destination</th>
+          <th>Trip Starts</th>
+          <th>Trip Ends</th>
+          <th>Leave trip?</th>
+
+        </tr>
+        {%for i in user_plans%}
+
+        <tr>
+          <td><a href="destination/{{i.travel_id}}">{{i.travel.destination}}</a></td>
+
+          <td>{{i.travel.date_from}}</td>
+
+          <td>{{i.travel.date_to}}</td>
+
+          <td><a href="remove/{{i.travel_id}}">leave buddies</a></td>
+
+        </tr>
+        {%endfor%}
+      </table>
+
+      <br>
+
+      <h2 class='info'> YOUR FRIENDS' TRIPS</h2>
+      <table>
+        <tr>
+          <th>Plannedy By</th>
+          <th>Destination</th>
+          <th>Trip Starts</th>
+          <th>Trip Ends</th>
+          <th>Join Them?</th>
+        </tr>
+        {%for i in all_other_user_plans%}
+
+        <tr>
+          <td>{{i.created_by}}</td>
+
+          <td><a href="destination/{{i.id}}">{{i.destination}}</a></td>
+
+
+          <td>{{i.date_from}}</td>
+
+          <td>{{i.date_to}}</td>
+
+          <td><a class='orange_highlight' href="join/{{i.id}}">yeah!</a></td>
+        </tr>
+        {%endfor%}
+
+      </table>
+      <br>
+      <form class="" action="add" method="post">{%csrf_token%}
+        <input class="button" type="submit" name="" value="Add New Trip">
+
+      </form>
+      <br>
+      <hr>
+
+      <a href="/logout">Log Out</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
